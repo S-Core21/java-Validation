@@ -13,7 +13,6 @@ body>div{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border: 1px solid;
 }
 #image > img{
     width: 600px;
