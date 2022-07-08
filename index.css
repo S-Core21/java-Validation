@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+   }
+body>div{
+    height: 100vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid;
+}
+#image > img{
+    width: 600px;
+}
+header{
+    text-align: center;
+}
+#logo{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 60px;
+}
+h1{
+    font-size: 35px;
+    margin: 1rem 0rem;
+    color: hsl(0, 0%, 59%);
+}
+p{
+    color: hsl(0, 0%, 59%);
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+span{
+    color: black
+}
+label{
+    display: none;
+}
+#email{
+    border: 1px solid;
+    width: 350px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: 1rem;
+    border-color: hsl(0, 0%, 59%);
+}
+#btn{
+    width: 150px;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    color: white;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+}
+.icon{
+    width: 20px;
+    margin: 0.5rem;
+   
+}
+.icon:hover{
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: hsl(210, 67%, 37%);
+}
+#icons{
+    height: 4vh;
+    margin-bottom: 1rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#error{
+    position: absolute;
+    left: 34rem;
+    margin-top: 4px;
+    font-style: italic;
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 420px) {
+    body>div{
+        width: 100vw;
+    }
+    #image > img{
+       max-width: 300px;
+    }
+    #email,#btn{
+        font-size: 15px;
+        margin: 8px;
+        padding: 10px 0px 10px 15px;
+        width: 90%;
+    }
+    #btn{
+       padding: 13px 40px;
+       width: 95%;
+    }
+    header{
+        display: block;
+    }
+    h1{
+        font-size: 25px;
+    }
+    #image>img{
+        width: 100%;
+    }
+    #image{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        width: 96vw;
+        padding: 0;
+    }
+    #logo{
+        margin-top: 4rem;
+        width: 60px;
+    }
+    p{
+        font-size: 15px;
+    }
+    footer{
+        margin-top: 100px;
+    }
+    #error{
+        position: absolute;
+        left: 9rem;
+        font-size: 10px;
+        color: red;
+    }
+   
+}
